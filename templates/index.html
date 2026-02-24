@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Fact Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Random Fact Generator</h1>
+
+    <div class="fact">
+        {{ fact }}
+    </div>
+
+    <form method="POST">
+        <button type="submit">Generate New Fact</button>
+    </form>
+</div>
+
+</body>
+</html>
